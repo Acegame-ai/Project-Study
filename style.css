@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+    color: #2e6cd5;
+  }
+  
+  .notification-btn img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    flex: 1 1 calc(33.33% - 10px);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .feature-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Progress Section */
+  .progress {
+    margin-bottom: 20px;
+  }
+  
+  .progress h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .progress-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar {
+    width: 60%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-fill {
+    height: 10px;
+    background: #2e6cd5;
+    transition: width 1.5s ease;
+  }
+  
+  .progress-percentage {
+    width: 10%;
+    text-align: right;
+  }
+  
+  /* Schedule Section */
+  .schedule h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-item span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .join-btn {
+    background: #2e6cd5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .join-btn:hover {
+    background: #4CAF50;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feature-item {
+      flex: 1 1 calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feature-item {
+      flex: 1 1 100%;
+    }
+  }
+  
