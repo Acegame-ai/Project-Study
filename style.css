@@ -11,6 +11,30 @@
     color: #333;
     line-height: 1.6;
   }
+
+  /* Navbar Styles */
+  .navbar {
+    background-color: #2e6cd5;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  .navbar:hover {
+      background-color: #234a93;
+  }
+  .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+  }
+  .navbar-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
   
   .container {
     max-width: 1200px;
@@ -31,10 +55,23 @@
     color: #2e6cd5;
   }
   
-  .notification-btn img {
-    width: 24px;
-    height: 24px;
-  }
+  .notification-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2e6cd5;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.notification-btn i {
+    font-size: 1.5rem;
+}
+
+.notification-btn:hover i {
+    color: #4CAF50;
+    transform: scale(1.2);
+}
+
   
   /* Features Section */
   .features {
@@ -53,11 +90,23 @@
     flex: 1 1 calc(33.33% - 10px);
     cursor: pointer;
     transition: transform 0.2s;
+    font-size: 2rem;
+    color: #2e6cd5;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+  }
+  .feature-item:hover i {
+    transform: scale(1.2);
+    color: #4CAF50;
+}
+  .name{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .feature-item img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin-bottom: 10px;
   }
   
